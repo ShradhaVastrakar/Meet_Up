@@ -44,21 +44,21 @@
  
                  <div class="form__field__wrapper">
                      <label>Enter your Name</label>
-                     <input type="text" name="name" required placeholder="Enter your name..." />
+                     <input type="text" name="name" id="signup-name" required placeholder="Enter your name..." />
                  </div>
                  <div class="form__field__wrapper">
                      <label>Enter your Email</label>
-                     <input type="text" name="name" required placeholder="Enter your email..." />
+                     <input type="text" name="name" id="signup-email" required placeholder="Enter your email..." />
                  </div>
  
                  <div class="form__field__wrapper">
                      <label>Enter your Password</label>
-                     <input type="text" name="room"  placeholder="Enter your password..." />
+                     <input type="password" name="room"  id="signup-pass" placeholder="Enter your password..." />
                  </div>
  
                  <div class="form__field__wrapper">
-                     <button type="submit">SignUp
-                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/></svg>
+                     <button  type='button' onclick="onSignUp()">SignUp
+                         
                     </button>
                  </div>
             </form>
@@ -66,5 +66,5 @@
      </main>
     
 </body>
-<script type="text/javascript" src="js/lobby.js"></script>
+<script type="text/javascript" src="./scripts/signup.js"></script>
 </html>
