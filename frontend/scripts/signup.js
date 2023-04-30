@@ -16,7 +16,15 @@ const onSignUp = () => {
     }).then(res => res.json())
         .then(res => {
             console.log(res)
-            alert(res.msg)
+            Swal.fire(
+                'Good job!',
+                'You clicked the button!',
+                'success'
+            )
+            setTimeout(() => {
+                window.location.href = "login.html"
+            }, 2000)
+
         })
         .catch((err) => console.log(err))
 
