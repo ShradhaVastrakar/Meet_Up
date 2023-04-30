@@ -47,7 +47,7 @@ userRouter.post("/login", async (req,res) => {
     try{
 
         const user = await userModel.find({email})
-        console.log(user)
+        // console.log(user)
        
     //  
         
