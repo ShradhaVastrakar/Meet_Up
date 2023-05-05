@@ -18,7 +18,7 @@ const onLogin = () => {
         .then(res => {
             console.log(res)
             Swal.fire(
-                'Good job!',
+                'login successful🤩',
                 'You clicked the button!',
                 'success'
               )
