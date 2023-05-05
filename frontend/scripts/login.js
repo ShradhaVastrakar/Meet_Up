@@ -11,7 +11,7 @@ const onLogin = () => {
           icon: 'error',
           title: 'Oops...',
           text: 'Please fill all the details....',
-          footer: '<a href="">Why do I have this issue?</a>'
+      
         })
   
          return;
