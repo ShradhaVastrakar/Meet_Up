@@ -7,7 +7,7 @@ const onSignUp = () => {
         pass: document.querySelector("#signup-pass").value
     }
 // console.log(payload)
-    fetch("http://localhost:6120/users/register", {
+    fetch("https://enthusiastic-attire-tuna.cyclic.app/users/register", {
         method: "POST",
         headers: {
             "Content-type": "application/json"
