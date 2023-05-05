@@ -6,6 +6,16 @@ const onLogin = () => {
         pass: document.querySelector("#login-pass").value
     }
     // console.log(payload)
+    if(payload.email == "" || payload.pass == ""){
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Please fill all the details....',
+          footer: '<a href="">Why do I have this issue?</a>'
+        })
+  
+         return;
+      }
   
     fetch("https://enthusiastic-attire-tuna.cyclic.app/users/login", {
         method: "POST",

@@ -7,6 +7,16 @@ const onSignUp = () => {
         pass: document.querySelector("#signup-pass").value
     }
 // console.log(payload)
+if(payload.name == "" || payload.email == "" || payload.pass == ""){
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Please fill all the details....',
+      footer: '<a href="">Why do I have this issue?</a>'
+    })
+
+     return;
+  }
     fetch("https://enthusiastic-attire-tuna.cyclic.app/users/register", {
         method: "POST",
         headers: {
