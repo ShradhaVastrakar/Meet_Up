@@ -17,7 +17,7 @@ const onSignUp = () => {
         .then(res => {
             console.log(res)
             Swal.fire(
-                'Good job!',
+                'Signup successfull🎉🎉',
                 'You clicked the button!',
                 'success'
             )
