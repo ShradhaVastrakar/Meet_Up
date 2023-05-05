@@ -7,7 +7,7 @@ const onLogin = () => {
     }
     // console.log(payload)
   
-    fetch("http://localhost:6120/users/login", {
+    fetch("https://enthusiastic-attire-tuna.cyclic.app/users/login", {
         method: "POST",
         headers: {
             "Content-type": "application/json"
