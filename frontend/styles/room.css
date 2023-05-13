@@ -1,3 +1,4 @@
+
 .container {
   margin-top: 74px;
   height: clac(100vh - 74px);
@@ -137,12 +138,38 @@
 }
 
 #message__form {
+  display: flex;
   width: 23.2rem;
   position: fixed;
   bottom: 0;
   display: block;
   background-color: #1a1a1a;
   padding: 1em;
+}
+#img{
+  /* border: 1px solid red; */
+  border-radius: 17px;
+  outline: none;
+  width: 9%;
+  margin: -17% 0% 7% 87%;
+}
+.emoji{
+  margin-left: 3.5px;
+  margin-top: 10px;
+  height: 0px;
+  width: 400px;
+  border-radius: 5px;
+  background-color: #fff;
+  overflow-y: scroll;
+  cursor: pointer;
+  transition: 0.5s height;
+}
+.emoji::-webkit-scrollbar{
+  width: 0;
+}
+.emoji span{
+  margin: 26px;
+  font-size: 26px;
 }
 
 #message__form input {
